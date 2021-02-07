@@ -53,7 +53,7 @@ async function interact(alreadyComplimented, nullUpTo, guessedYet, lastChat, art
     const responses = [ //The responses themselves (these rows match up with the ones in secondaryTriggers).
         ["I come from JavaScript.", "I am just some lines of code telling me to be nice :)", "I am a user script that the creator is running on his computer."],
         ["I live in skribbl servers night and day! :D", "The internet is my home.", "I can't tell you my exact location, but I'm in the USA."],
-        ["I am a NiceBot...so neither boy nor girl :)", "My gender is Bot!", "I'll let you decide that for yourself, *."],
+        ["I am a NiceBot, so neither boy nor girl :)", "My gender is Bot!", "I'll let you decide that for yourself, *."],
         ["I'm just trying to be nice, *!", "Sorry about that, *.", "My apologies for seeming creepy, *."],
         ["I was made by a player called Pos."],
         ["Unfortunately, the person who made me doesn't let me stop being nice.", "Apologies for being a bit spammy, *.", "Sorry about that, *!"],
