@@ -136,7 +136,6 @@ function compliment(compliments, alreadyComplimented){
         if (!alreadyComplimented.includes(names[n])){
             var ind = Math.floor(compliments.length*Math.random());
             say(compliments[ind].replace("*", names[n]));
-            compliments.splice(ind,1);
             alreadyComplimented.push(names[n]);
             break;
         }
