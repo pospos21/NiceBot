@@ -18,7 +18,7 @@
     //The bot will only respond if these words or phrases are in the message. You can expand this list to account for messages not aimed directly at the bot.
 
     const secondaryTriggers = [ //The triggers for the specific response the bot will make. The script will check through them in this order.
-        ["from?", "are u from", "are you from", "r u from", "r you from", "it programmed", "bot programmed", "u programmed", "u coded", "how were you created", "how was it created", "come from", "where u from", "where you from", "where u frm", "where you frm", "how were u made", "how were you made", "how was nice", "how was this bot", "how was the bot", "how was nicebot", "how was nice bot"],
+        ["from?", "are u from", "are you from", "r u from", "r you from", "it programmed", "bot programmed", "u programmed", "u coded", "how were you created", "how was it created", "come from", "where u from", "where you from", "where u frm", "where you frm", "how were u made", "how were you made", "how was nice", "how was this bot", "how was the bot", "how was nicebot", "how was nice bot", "install", "get this bot", "want this bot", "want my own", "have my own", "get my own", "to have this bot"],
         ["do u live", "do you live", "where u live", "where you live", "where ya live", "ur location"],
         ["boy or girl", "girl or boy", "boy or a girl", "girl or a boy", "u a boy", "boy?", "girl?", "u a girl", "gender"],
         ["creep", "petrif", "scary", "freaking me", "scare", "scaring"],
@@ -35,8 +35,8 @@
         ["hey ","hello", "ciao", "bonjour", "hallo", "wassup", "heelo", "hi ","sup ", "hiya", "hoi", "whats up", "bot's back", "your here", "youre here", "you're here", "bot respond", "bot answer", "what's up", "it's nicebot", "its nicebot", "s a nicebot", "s a nice bot", "greetings", "it's nice bot", "bot is here", "its nice bot", "notice me", "bot again", "bot is back", "bot has returned", "u are back", "ur back", "you're back", "answer me", "we meet again", "bot came", "its me", "it's me", "hi,", "hi bot", "hi nice"],
     ];
     const responses = [ //The responses themselves (these rows match up with the ones in secondaryTriggers).
-        ["I come from JavaScript.", "I am just some lines of code telling me to be nice :)"],
-        ["I live in skribbl servers night and day! :D", "The internet is my home.", "Sorry *, I can't tell you my exact location!"],
+        ["I was coded in JavaScript! You can get your own NiceBot at https://github​.com/pospos21/nicebot"],
+        ["I live on GitHub! https://github​.com/pospos21/nicebot"],
         ["I am a NiceBot, so neither boy nor girl :)", "My gender is Bot!", "I'll let you decide that for yourself, *."],
         ["I'm just trying to be nice, *!", "Sorry about that, *.", "My apologies, *."],
         ["I was made by a player called Pos."],
