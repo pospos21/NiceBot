@@ -186,7 +186,7 @@
         });
     }
 
-    function getPlayerNames(){ return $('#containerGamePlayers .name').map(function(){ return $(this).text().replace(" (You)","");}).get(); }
+    function getPlayerNames(){ return $('#containerGamePlayers .name').map(function(){ return $(this).text().replace(" (You)",""); }).get(); }
     function getArtist(){ return $("#containerGamePlayers .drawing:visible").parent().prev().find(".name").text().replace(" (You)",""); }
     function rand(array){ return array[Math.floor(array.length*Math.random())]; }
     function thumbsUp(){ $('.thumbsUp').click().hide(); }
