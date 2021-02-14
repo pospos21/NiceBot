@@ -174,6 +174,7 @@
                     .replace("rgb(206, 79, 10)","red") //Warning or departure messages
                     .replace("rgb(0, 0, 0)","black") //General chat messages (important!)
                     .replace("rgb(125, 173, 63)","black")
+                    .replace("rgb(255, 255, 255)","black")
                     .replace("rgb(86, 206, 39)","green") //Guessed or arrival messages
                     .replace("rgb(57, 117, 206)","blue") //General info messages
                     .replace("rgb(204, 204, 0)","yellow"); //Kick or server restart messages
