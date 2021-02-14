@@ -4,10 +4,9 @@
 // @include      *https://skribbl.io/*
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
 // @name         NiceBot3
-// @version      0.2
 // ==/UserScript==
 
-(function(){
+(function(){ //NiceBot is now compatible with Dark Mode!
 
     const greetings = ["Hey *!", "Hello *!", "Hi *!", "Greetings, *!", "Hey there, *!", "Howdy *!", "Nice to see you, *!", "Sup *!", "Yo *!"];
     const goodbyes = ["See you, *!", "Goodbye, *!", "Was nice playing, *!", "Bye *!", "Have a nice day, *.", "See you later, *.", "Hope to see you again, *!", "Bye now, *!", "Goodbye now, *!"];
@@ -190,34 +189,35 @@
     function getArtist(){ return $("#containerGamePlayers .drawing:visible").parent().prev().find(".name").text().replace(" (You)",""); }
     function rand(array){ return array[Math.floor(array.length*Math.random())]; }
     function thumbsUp(){ $('.thumbsUp').click().hide(); }
-    function numGuessed(){ return $("#containerGamePlayers .player.guessedWord .name:not([style])").length; }
+    function numGuessed(){ return $("#containerGamePlayers .player.guessedWord .name:not(:contains(' (You)'))").length; }
 
     function say(text){
         if (Date.now() - lastTyped > 1000){
             $("#inputChat").val(text);
-            return unsafeWindow.formChat[Object.keys(unsafeWindow.formChat).filter(x => ~x.indexOf("jQuery"))[0]].events.submit[0].handler();
+            unsafeWindow.formChat[Object.keys(unsafeWindow.formChat).filter(x => ~x.indexOf("jQuery"))[0]].events.submit[0].handler();
         }
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
-    function refresher() { //Optional refresh function if you want to run this bot AFK
+    function refresher() { //If you want to run the bot AFK (See top)
         let loop = setInterval(function(){
-            $(".btn-block:contains(Play!):visible, #modalIdle .btn-block:visible").click();
+            $(".btn-block:contains(Play!):visible, #modalKicked .btn-block:visible, #modalDisconnect .btn-block:visible, #modalIdle .btn-block:visible").click();
 
-            if (($('#containerGamePlayers .player').length<2 && $('#containerGamePlayers .player').length > 0)
-                || $("#overlay .content")[0].innerHTML.slice(18,31) == "Choose a word"
-                || $("#modalKicked .btn-block:visible, #modalDisconnect .btn-block:visible").length > 0
-                || $("#containerGamePlayers .drawing:visible").parent().prev().find(".name[style='color: rgb(0, 0, 255);']").length > 0
-               ){
+            if (($('#containerGamePlayers .player').length == 1) || $("#overlay .content")[0].innerHTML.slice(18,31) == "Choose a word"){
                 location.reload();
                 clearInterval(loop);
             }
-        }, 500); //Lower for quicker response (must include clearInterval or it will try to repeatedly reload)
+            else if ($("#containerGamePlayers .drawing:visible").parent().prev().find(".name:contains(' (You)')").length > 0){
+                location.reload();
+                clearInterval(loop);
+            }
+        }, 500); //Lower for quicker response
 
-        setInterval(function(){ //If the bot gets stuck on a loading screen for any reason
+        setInterval(function(){
             if ($("#screenLoading[style='']").length > 0){
                 window.location.href = "https://skribbl.io/";
+                clearInterval(loop);
             }
         }, 10000 + Math.floor(20000*Math.random()));
     }
