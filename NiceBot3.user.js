@@ -176,7 +176,7 @@
                     .replace("rgb(125, 173, 63)","black")
                     .replace("rgb(255, 255, 255)","black")
                     .replace("rgb(86, 206, 39)","green") //Guessed or arrival messages
-                    .replace("rgb(57, 117, 206)","blue") //General info messages
+                    .replace("rgb(57, 117, 206)","blue") //Now-drawing messages
                     .replace("rgb(204, 204, 0)","yellow"); //Kick or server restart messages
             });
             nullUpTo = $('#boxMessages p').length - 1; //Updates nullUpTo, returns array of messages with each item being an array itself: [sender, message, color]
