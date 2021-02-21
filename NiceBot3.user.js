@@ -31,7 +31,7 @@
         ["thank", "thx", "thnx", "thanx", "thnaks", "bot ty", "nice ty", "tx", "thnk", "tnx","tanx", "thaks", "ty nice", "ty bot", "danke", "tysm"],
         ["how are you", "how r u", "how are u", "how r you", "hbu?", "how about you", "how about u", "day going", "was your day", "is your day", "was ur day", "is ur day", "s ur day", "s your day", "good day?", "nice day?", "are you ok", "r you ok", "are u ok", "r u ok", "u ok nicebot", "u okay nicebot", "u ok bot", "u okay bot", "hows it going", "how's it going"],
         ["remember me", "remeber me", "remebmer me", "rememer me", "remmember me", "rememeber me", "rememmber me", "rember me", "rerember me"],
-        ["hey ","hello", "ciao", "bonjour", "hallo", "wassup", "heelo", "hi ","sup ", "hiya", "hoi", "whats up", "bot's back", "your here", "youre here", "you're here", "bot respond", "bot answer", "what's up", "it's nicebot", "its nicebot", "s a nicebot", "s a nice bot", "greetings", "it's nice bot", "bot is here", "its nice bot", "notice me", "bot again", "bot is back", "bot has returned", "u are back", "ur back", "you're back", "answer me", "we meet again", "bot came", "its me", "it's me", "hi,", "hi bot", "hi nice"],
+        ["hey ","hello", "ciao", "bonjour", "hallo", "wassup", "heelo", "hi ","sup ", "hiya", "hoi", "whats up", "bot's back", "your here", "youre here", "you're here", "bot respond", "bot answer", "what's up", "it's nicebot", "its nicebot", "s a nicebot", "s a nice bot", "greetings", "it's nice bot", "bot is here", "its nice bot", "notice me", "bot again", "bot is back", "bot has returned", "u are back", "ur back", "you're back", "answer me", "we meet again", "bot came", "its me", "it's me", "hi,", "hi bot", "hi nice"]
     ];
     const responses = [ //The responses themselves (these rows match up with the ones in secondaryTriggers).
         ["I was coded in JavaScript! You can get your own NiceBot at https://github​.com/pospos21/nicebot"],
@@ -48,7 +48,7 @@
         ["My pleasure, *.", "Anytime, *.", "No problem, *.", "You're welcome, *."],
         ["I'm great, thanks!", "It's been a busy day of being nice :)", "I'm good, *!", "I'm doing well, *!", "I am doing fine, *!", "Having a wonderful time being nice today, *.", "I'm doing great, *!", "I'm good, thanks!", "I'm fine, thanks!"],
         ["*, I do remember you!", "Yes I do, welcome back!", "Hello again, *!", "Hey there again, *!", "Welcome back, *!", "Yes, I do remember you :)", "I do remember!"],
-        ["Hello again, *!", "Hi again, *!", "What's up, *!", "Hey there again, *!", "Hello *!", "Hey *!", "Hi *!"],
+        ["Hello again, *!", "Hi again, *!", "What's up, *!", "Hey there again, *!", "Hello *!", "Hey *!", "Hi *!"]
     ];
 
     //Praise for the first guesser and artist (optional)
